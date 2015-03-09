@@ -73,6 +73,6 @@ public class PersonCrudImpl implements PersonCrudInt {
 
         addressRepository.delete( existingPerson.getAddress() );
         personRepository.delete( existingPerson );
-        return false;
+        return true;
     }
 }
